@@ -1,0 +1,120 @@
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../fonts/Montserrat-Regular.ttf) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+*{
+  font-family: 'Montserrat';
+}
+
+.body-login{
+  height: 100vh;
+}
+
+.image-login{
+  display: flex;
+}
+
+.image-login span{
+  flex: 1;
+  background-size: cover;
+}
+
+/* sidebar */
+.side-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #0a2558;
+  width: 240px;
+  position: absolute;
+  height: 100vh;
+}
+
+.side-menu nav li{
+  list-style: none;
+}
+
+.side-menu i,
+.side-menu a,
+.side-menu h3{
+  color: #fff;
+}
+
+.side-menu a{
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 0.8rem;
+}
+
+.side-menu > a{
+  font-size: 1.5rem;
+  padding: 12px 20px;
+}
+
+.navbar{
+  margin-left: 240px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar:focus{
+  outline: none;
+}
+
+.navbar i{
+  color: #fff;
+}
+
+header{
+  background-color: #0a7ae2;
+}
+
+.avatar .fa-user-circle{
+  font-size: 24px;
+}
+
+.avatar i,
+.avatar span{
+  color: #fff;
+}
+
+.product-list{
+  margin-left: 244px;
+}
+
+.image-dashboard{
+  height: 93vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.navbar-nav{
+  cursor: pointer;
+}
+
+.btn-login-style{
+  color: rgba(255, 255, 255, 0.9);
+}
+.btn-login-style:hover{
+  color: #fff;
+}
+
+.btn-logout-style:hover{
+  background-color: transparent;
+}
+
+@media all and (max-width: 768px){
+  .image-login{
+    display: none;
+  }
+}
